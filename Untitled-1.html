@@ -68,5 +68,66 @@
         </tr>
       </table>
     </div>
+    <div>
+      <h2 class="section-title">Order site</h2>
+      <form action="order.php" method="post">
+        <div>
+          <label for="clientName"><span>Client Name</span></label>
+         <input type="text" id="clientName" placeholder="Input Name" name="clientName"> 
+        </div>
+        <div>
+          <label>
+            <span>Input E-mail</span>
+            <input type="email" placeholder="Input email" name="clienEmail">
+          </label>
+        </div>
+        <div>
+        <label>
+          <span>Select Genger</span>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </label>
+        </div>
+        <div>
+          <label>
+            <span>VAS</span>
+            <input type="checkbox" name="extra" value="adaptive">
+            Adaptive
+            <input type="checkbox" name="extra" value="hosting" checked>
+            Hosting
+            <input type="checkbox" name="extra" value="support">
+            Supporting
+            <input type="checkbox" name="extra" value="admin">
+            Setup of Admin panel
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Site Type</span>
+            <select name="typeOfSite" multiple>
+              <option value="eshop">E-Shop</option>
+              <option value="landing">Landing</option>
+              <option value="card">Card Site</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Please Add Template</span>
+            <input type="file" name="fileadd">
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Your Comment</span>
+            <textarea name="comment" cols="30" rows="10" maxlength="100"></textarea>
+          </label>
+        </div>
+        <div>
+          <input type="reset" value="reset">
+          <button name="submit">Send</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
